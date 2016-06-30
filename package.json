@@ -1,0 +1,32 @@
+{
+  "name": "gulp-less",
+  "version": "0.0.4",
+  "description": "Using gulp build a project instance. Link: https://github.com/nimojs/gulp-book/blob/master/chapter7.md",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.2",
+    "gulp-watch-less": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nimojs/gulp-demo"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp-book",
+    "gulp"
+  ],
+  "author": "nimojs <nimo.jser@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nimojs/gulp-demo/issues"
+  },
+  "homepage": "https://github.com/nimojs/gulp-demo",
+  "dependencies": {
+    "handlebars": "^3.0.1"
+  }
+}
