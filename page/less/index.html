@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>How to Modify Variables in Less</title>
+    <link rel="stylesheet/less" type="text/css" href="ModifyVariablesStyles.css" />
+    <script src="less-1.5.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript">
+        function ModifyWidthInLess() {
+            /*Using modifyVars method to modify the variable borderWidth which is defined in the style sheet.
+             The change gets reflected automatically
+             */
+            less.modifyVars({
+                '@borderWidth': document.getElementById("txtModifyWidth").value
+            });
+        }
+        function ModifyColorsInLess() {
+            /*Using modifyVars method to modify the variable defaultBackgroundColor which is defined
+             in the style sheet.
+             The change gets reflected automatically
+             */
+            less.modifyVars(
+                    {
+                        '@defaultBackgroundColor': document.getElementById("txtModifyColors").value
+                    }
+            );
+        }
+    </script>
+</head>
+<body>
+<div class="body">
+    Header body
+</div>
+<br />
+<br />
+Enter the width in pixels(e.g. 1 2 3 ...) and click on the button to see how the border widths
+are modified dynamically<br />
+<input type="text" id="txtModifyWidth" value="5" /> <input type="button" id="btnModifyWidth"
+                                                           onclick="javascript:ModifyWidthInLess();" value="Modify Border Width" />
+<br />
+<br />
+<hr />
+Enter the color(e.g. red, yellow, cyan, violet, #FFF, #EBEBEB etc...) and click on the button
+to see how the color is modified dynamically<br />
+<input type="text" id="txtModifyColors" value="#834dab" /> <input type="button" id="btnModifyColors"
+                                                                  onclick="javascript:ModifyColorsInLess();" value="Modify Color" />
+</body>
+</html>

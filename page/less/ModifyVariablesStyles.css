@@ -1,0 +1,18 @@
+/*
+Less also allows you to change the values of the properties at runtime using less.modifyVars method
+In the below example you will  see how to change the value of borderWidth and defaultBackgroundColor changes
+*/
+@defaultBackgroundColor: #834dab;
+@height: 50;
+@padding: 5;
+@borderWidth: 5;
+.body
+{
+    background-color: @defaultBackgroundColor;
+    color:White;
+    width:500px;
+    height:@height;
+    border-width: @borderWidth;
+    border-style:solid;
+    border-color: Black;
+}
